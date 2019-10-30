@@ -75,5 +75,6 @@ header {
 
 .replay {
     grid-area: replay;
-
+    width: 1000px;
+    height: auto;
 }
