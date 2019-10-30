@@ -1,8 +1,23 @@
 {% extends 'layout.html.twig' %}
 
-{% block content %}
-    <h1>bdd</h1>
-    {% include 'header.html.twig' %}
-    {% include 'text.html.twig' %}
-    {% include 'script.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/room_style.css">
+{% endblock %}
+
+
+
+    <header>
+        <h1>title</h1>
+    </header>
+        <section class="picture"><h2>picture</h2></section>
+    {% endblock %}
+        {% include 'text.html.twig' %}
+    {% endblock %}
+        <section class="monster"><h2>monster</h2></section>
+        <section class="replay"><h2>replay</h2></section>
+    {% block javascript %}
+        {%  include 'script.js' %}
+    {% endblock %}
+
+
 {% endblock %}

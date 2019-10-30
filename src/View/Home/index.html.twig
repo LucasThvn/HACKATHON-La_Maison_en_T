@@ -1,5 +1,31 @@
-{% extends 'layout.html.twig' %}
-
 {% block content %}
-    <h1>Hello Wilder !</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <title>La Maison en T</title>
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="stylesheet" href="/assets/css/style-home-game-over.css">
+        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <video autoplay loop id="bgvid">
+        <source src="/assets/movie/Homepage-fond.mp4" type="video/mp4">
+    </video>
+    <div class="box-title">
+        <h1 class="index-title-level-1">La Maison</h1>
+        <h2 class="index-title-level-2">En</h2>
+        <h3 class="index-title-level-3">T</h3>
+    </div>
+    <div class="box-button-play">
+        <a href="#" class="link-button-play-index"><button class="button-play-index">Play ( At your peril )</button></a>
+    </div>
+    <div class="box-hackathon">
+        <p class="txt-hackathon-infos">Hackathon Wild Code School Orléans 30-31 october 2019</p>
+        <p class="credits">Caroline, Olivier, Valentin, Wilfried, Lucas</p>
+    </div>
+    </body>
+    </html>
+
 {% endblock %}
