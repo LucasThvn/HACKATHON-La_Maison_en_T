@@ -1,0 +1,17 @@
+.replay {
+
+    height: auto;
+    display: flex;
+}
+.container{
+    margin-left: 10%;
+}
+
+.song {
+   font-size: 40px;
+}
+.pause {
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
