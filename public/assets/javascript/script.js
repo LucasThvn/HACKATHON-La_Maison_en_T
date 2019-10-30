@@ -1,7 +1,7 @@
 <!--script to the text-->
 <SCRIPT LANGUAGE=JavaScript>
 
-    var chaine = "ce kon veut";
+    var chaine = "ce kon veut icigdfgdfffddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
     var nb_car = chaine.length;
     var tableau = chaine.split("");
     texte = new Array;
