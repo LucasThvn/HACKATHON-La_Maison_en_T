@@ -3,7 +3,6 @@
 
 namespace App\Controller;
 
-
 class GameOverController extends AbstractController
 {
     public function gameOver()
