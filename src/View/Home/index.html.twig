@@ -1,15 +1,9 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/style-home-game-over.css">
+{% endblock %}
 {% block content %}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <title>La Maison en T</title>
-        <link rel="stylesheet" href="/assets/css/reset.css">
-        <link rel="stylesheet" href="/assets/css/style-home-game-over.css">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    </head>
-    <body>
+
     <audio controls autoplay="">
         <source src="assets/Music/DAGGERFALL_-_Scary_Dungeon_1.ogg" type="audio/mpeg">
         <source src="assets/Music/DAGGERFALL_-_Scary_Dungeon_4.ogg" type="audio/mpeg">
@@ -25,13 +19,13 @@
         <h3 class="index-title-level-3">T</h3>
     </div>
     <div class="box-button-play">
-        <a href="#" class="link-button-play-index"><button class="button-play-index">Play ( At your peril )</button></a>
+        <a href="/Scenario/Scenario" class="link-button-play-index"><button class="button-play-index">Histoire</button></a>
+    </div>
+    <div class="box-button-play">
+        <a href="#" class="link-button-play-index"><button class="button-play-index">Jouer (à vos risques et périls)</button></a>
     </div>
     <div class="box-hackathon">
-        <p class="txt-hackathon-infos">Hackathon Wild Code School Orléans 30-31 october 2019</p>
+        <p class="txt-hackathon-infos">Hackathon Wild Code School Orléans 30-31 octobre 2019</p>
         <p class="credits">Caroline, Olivier, Valentin, Wilfried, Lucas</p>
     </div>
-    </body>
-    </html>
-
 {% endblock %}
