@@ -1,15 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/style-home-game-over.css">
+{% endblock %}
+
 {% block content %}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <title>La Maison en T</title>
-        <link rel="stylesheet" href="/assets/css/reset.css">
-        <link rel="stylesheet" href="/assets/css/style-home-game-over.css">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-    </head>
-    <body>
     <video autoplay loop id="bgvid">
         <source src="/assets/movie/Homepage-fond.mp4" type="video/mp4">
     </video>
@@ -20,9 +15,6 @@
     </div>
     <div class="box-game-over">
         <p class="txt-game-over">Game Over</p>
-        <a href="#" class="link-replay-game-over">Replay</a>
+        <a href="/" class="link-replay-game-over">Rejouer</a>
     </div>
-    </body>
-    </html>
-
 {% endblock %}

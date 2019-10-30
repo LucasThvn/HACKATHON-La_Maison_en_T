@@ -1,0 +1,59 @@
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: cover;
+}
+.box-scenario {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.scenario-title {
+    color: white;
+    font-size: 4em;
+    font-family: 'Staatliches', cursive;
+}
+.box-txt-scenario {
+    margin-top: 2em;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+.txt-scenario {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    padding: 0.4em;
+    line-height: 1.6em;
+}
+.txt-scenario-two {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    padding: 0.4em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+.txt-scenario-three {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.box-button-play-scenario {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+.button-play-scenario {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    border: 2px solid white;
+    padding: 1em;
+    margin: auto;
+    width: 300px;
+    background-color: transparent;
+}
