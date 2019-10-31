@@ -1,0 +1,32 @@
+<DIV class="text" ID=bloc></DIV>
+
+<SCRIPT LANGUAGE=JavaScript>
+
+
+var chaine = "Si tout droit: en vous approchant d’un vieux buffet, vous remarquez avec effroi que les tiroirs " +
+"bougent tout seuls. Alors que vous reculez, pris de terreur, un grand couteau couvert de rouille sort du " +
+"buffet en sifflant " +
+"et vient se planter directement dans votre poitrine. Vous mourrez sur le coup.";
+var nb_car = chaine.length;
+var tableau = chaine.split("");
+texte = new Array;
+var txt = '';
+var nb_msg = nb_car - 1;
+for (i=0; i<nb_car; i++) {
+texte[i] = txt+tableau[i];
+var txt = texte[i];
+}
+
+actual_texte = 0;
+function changeMessage()
+{
+document.getElementById("bloc").innerHTML = texte[actual_texte];
+actual_texte++;
+if(actual_texte >= texte.length)
+actual_texte = nb_msg;
+}
+if(document.getElementById)
+
+setInterval("changeMessage()",25) /* la vitesse de defilement (plus on a une valeur faible plus
+texte s'affiche rapidement) */
+</SCRIPT>
