@@ -3,13 +3,11 @@
 
 namespace App\Controller;
 
-
-use App\Model\Monster;
 use App\Model\MonsterManager;
 
 class MonsterController extends AbstractController
 {
-    public function addMonster()
+    private function addMonster()
     {
         $monsterManager = new MonsterManager();
         $result = $monsterManager->getMonsters();
@@ -23,6 +21,17 @@ class MonsterController extends AbstractController
             return $chosenMonster;
         }
     }
+
+    private function relocationPlay()
+    {
+        return header('Location: http://localhost:8000/Room/index');
+    }
+
+    private function relocationReplay()
+    {
+        return header('Location: http://localhost:8000/Home/index');
+    }
+
     public function transformToSession(){
 
         $arrayToMonster = $this->addMonster();
@@ -32,6 +41,11 @@ class MonsterController extends AbstractController
         $_SESSION['monster3'] = $arrayToMonster[3];
         $_SESSION['monster4'] = $arrayToMonster[4];
         $_SESSION['monster5'] = $arrayToMonster[5];
+        $this->relocationPlay();
     }
 
+    public function destroySession() {
+        session_destroy();
+        $this->relocationReplay();
+    }
 }
