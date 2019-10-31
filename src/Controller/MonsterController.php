@@ -24,7 +24,7 @@ class MonsterController extends AbstractController
 
     private function relocationPlay()
     {
-        return header('Location: http://localhost:8000/Room/index');
+        return header('Location: http://localhost:8000/Room/attic');
     }
 
     private function relocationReplay()

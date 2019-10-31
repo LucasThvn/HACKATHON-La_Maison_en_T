@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/room_style.css">
+{% endblock %}
+
+{% block content %}
+    {% include 'Room/title.html' %}
+    <section class="picture picture_couloir">
+        <div class="row justify-content-around doors">
+            <div class="chambre_conteneur col-offset-1">
+                <a href="/Room/chambre" class="attic-btn stretched-link"></a>
+            </div>
+            <div class="mort_conteneur col-offset-4">
+                <a href="/gameover/gameOver"  class="attic-btn stretched-link"></a>
+            </div>
+        </div>
+    </section>
+    {% include 'Room/text.html' %}
+    {% include 'Room/replay.html' %}
+    {% include 'Room/monster0.html.twig' %}
+
+{% endblock %}
