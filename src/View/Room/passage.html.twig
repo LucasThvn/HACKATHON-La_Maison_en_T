@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/room_style.css">
+{% endblock %}
+
+{% block content %}
+    {% include 'Room/title.html' %}
+    <section class="picture picture_passage">
+        <div class="justify-content-around doors">
+            <div class="passage_conteneur">
+                <a href="/Room/salon" class="attic-btn stretched-link"></a>
+            </div>
+        </div>
+    </section>
+    {% include 'Room/monster.html' %}
+    {% include 'Room/text.html' %}
+    {% include 'Room/replay.html' %}
+{% endblock %}

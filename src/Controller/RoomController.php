@@ -19,8 +19,35 @@ class RoomController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index()
+    public function attic()
     {
-        return $this->twig->render('Room/room.html.twig');
+        return $this->twig->render('Room/attic.html.twig');
     }
+
+    public function couloir()
+    {
+        return $this->twig->render('Room/couloir.html.twig');
+    }
+
+    public function cabinet()
+    {
+        return $this->twig->render('Room/cabinet.html.twig');
+    }
+
+    public function chambre()
+    {
+        return $this->twig->render('Room/chambre.html.twig');
+    }
+
+    public function passage()
+    {
+        return $this->twig->render('Room/passage.html.twig');
+    }
+
+    public function salon()
+    {
+        return $this->twig->render('Room/salon.html.twig');
+    }
+
 }
+
