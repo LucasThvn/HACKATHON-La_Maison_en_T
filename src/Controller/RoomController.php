@@ -48,6 +48,4 @@ class RoomController extends AbstractController
     {
         return $this->twig->render('Room/salon.html.twig');
     }
-
 }
-
