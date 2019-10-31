@@ -1,7 +1,7 @@
 
 <section class="replay">
     <div class="button">
-<button type="button" class="btn btn-dark btn-lg">Rejouer</button>
+<button type="button" class="btn btn-dark btn-lg" onclick="location.href='http://localhost:8000/Monster/destroySession'" >Rejouer</button>
     </div>
 
 <div class="container">
@@ -14,6 +14,9 @@
 </div>
 </div>
 
-    <scrip src=""></scrip>{% block javascript %}<script type="text/javascript" src="/assets/JS/mute.js"></script>{% endblock %}
+    <scrip src=""></scrip>
+    {% block javascripts %}
+    <script type="text/javascript" src="/assets/JS/mute.js"></script>
+    {% endblock %}
 
 </section>
