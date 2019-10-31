@@ -1,0 +1,33 @@
+<DIV ID=bloc></DIV>
+
+<SCRIPT LANGUAGE=JavaScript>
+
+
+    var chaine = "Cabinet de curiosité:\n" +
+        "\n" +
+        "Vous pénétrez dans un genre de cabinet de curiosité. Des créatures empaillées vous regardent fixement. " +
+        "Une grande bibliothèque vous fait face: elle est remplie d’ouvrages étranges. Démonologie, spiritisme, occulte, " +
+        "rien n’est fait pour vous rassurer. Vous décidez tout de même de fouiller la pièce. Il y a certainement une porte dérobée quelque-part.\n";
+    var nb_car = chaine.length;
+    var tableau = chaine.split("");
+    texte = new Array;
+    var txt = '';
+    var nb_msg = nb_car - 1;
+    for (i=0; i<nb_car; i++) {
+        texte[i] = txt+tableau[i];
+        var txt = texte[i];
+    }
+
+    actual_texte = 0;
+    function changeMessage()
+    {
+        document.getElementById("bloc").innerHTML = texte[actual_texte];
+        actual_texte++;
+        if(actual_texte >= texte.length)
+            actual_texte = nb_msg;
+    }
+    if(document.getElementById)
+
+        setInterval("changeMessage()",25) /* la vitesse de defilement (plus on a une valeur faible plus
+texte s'affiche rapidement) */
+</SCRIPT>

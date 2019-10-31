@@ -1,0 +1,26 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/room_style.css">
+    <link rel="stylesheet" href="/assets/css/mute.css">
+{% endblock %}
+
+{% block content %}
+    {% include 'Room/title.html' %}
+    <section class="picture picture_passage">
+        <div class="justify-content-around doors">
+            <div class="passage_conteneur">
+                <a href="/Room/salon" class="attic-btn stretched-link"></a>
+            </div>
+        </div>
+    </section>
+    {% include 'Room/monster1.html.twig' %}
+    <div class="text_passage">
+    {% include 'Room/passage_secret.html' %}
+    </div>
+    {% include 'Room/replay.html' %}
+{% endblock %}
+
+{% block javascript %}
+<script type = "text/javascript" src = "/assets/JS/monsterAppear.js" ></script>
+{% endblock %}
