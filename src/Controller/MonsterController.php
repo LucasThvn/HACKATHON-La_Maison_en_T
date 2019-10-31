@@ -33,12 +33,18 @@ class MonsterController extends AbstractController
         }
 
     }
-
     public function listMonster(int $numberMonster)
     {
         $arrayMonster = $this->addMonster();
         var_dump($arrayMonster[$numberMonster]);
-        return $this->twig->render('Monster/room.html.twig', ['monsters' => $arrayMonster]);
+        return $this->twig->render('Room/monster.html.twig', ['monsters' => $arrayMonster]);
+    }
+
+    public function showMonster(int $numberMonster)
+    {
+        $arrayMonster = $this->addMonster();
+        var_dump($arrayMonster[$numberMonster]);
+        return $this->twig->render('Room/room.html.twig', ['showMonsters' => $arrayMonster]);
     }
 
 }
