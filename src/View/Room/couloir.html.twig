@@ -2,6 +2,8 @@
 
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/room_style.css">
+    <link rel="stylesheet" href="/assets/css/mute.css">
+    <link rel="stylesheet" href="/assets/css/card_style.css">
 {% endblock %}
 
 {% block content %}
@@ -18,6 +20,9 @@
     </section>
     {% include 'Room/text.html' %}
     {% include 'Room/replay.html' %}
-    {% include 'Room/monster0.html.twig' %}
 
+{% endblock %}
+
+{% block javascript %}
+<script type = "text/javascript" src = "/assets/JS/monsterAppear.js" ></script>
 {% endblock %}
