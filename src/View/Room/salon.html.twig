@@ -16,12 +16,14 @@
                 <a href="/gameover/gameOver" class="attic-btn stretched-link"></a>
             </div>
             <div class="sortie_conteneur col-offset-1">
-                <a href="#" class="attic-btn stretched-link"></a>
+                <a href="/win/win" class="attic-btn stretched-link"></a>
             </div>
         </div>
     </section>
     {% include 'Room/monster1.html.twig' %}
-    {% include 'Room/text.html' %}
+    <section class="text text_passage">
+    {% include 'Room/salon.html' %}
+    </section>
     {% include 'Room/replay.html' %}
 {% endblock %}
 

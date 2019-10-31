@@ -2,6 +2,7 @@
 
 {% block stylesheet %}
     <link rel="stylesheet" href="/assets/css/room_style.css">
+    <link rel="stylesheet" href="/assets/css/mute.css">
 {% endblock %}
 
 {% block content %}
@@ -16,6 +17,13 @@
             </div>
         </div>
     </section>
-    {% include 'Room/text.html' %}
+    <section class="text text_passage">
+    {% include 'Room/attic.html' %}
+    </section>
     {% include 'Room/replay.html' %}
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="/assets/JS/mute.js"></script>
 {% endblock %}

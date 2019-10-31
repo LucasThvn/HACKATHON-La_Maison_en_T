@@ -17,10 +17,12 @@
     </section>
     {% include 'Room/monster1.html.twig' %}
     {% include 'Room/pictureMonster1.html.twig' %}
-    {% include 'Room/text.html' %}
+    <section class="text text_passage">
+    {% include 'Room/cabinet.html' %}
+    </section>
     {% include 'Room/replay.html' %}
 {% endblock %}
 
 {% block javascript %}
-    <script type = "text/javascript" src = "/assets/JS/monsterAppear.js" ></script>
+<script type = "text/javascript" src = "/assets/JS/monsterAppear.js" ></script>
 {% endblock %}

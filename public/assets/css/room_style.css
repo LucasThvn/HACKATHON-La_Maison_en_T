@@ -3,32 +3,58 @@
 }
 
 body {
+    max-width: 100%;
+    max-height: 100%;
     display: grid;
+    overflow: hidden;
+    background-color: black;
     grid-template-columns: 80vw 20vw;
     grid-template-rows: 15vh 60vh 25vh;
-    grid-column-gap: 0;
     grid-template-areas:
             "picture title"
             "picture monster"
             "text replay";
+    color: whitesmoke;
 }
 
-header {
+.title {
     grid-area: title;
+    background-color: black;
 }
 
 .monster {
     grid-area: monster;
+    background-color: black;
 }
 
 .text {
     grid-area: text;
+    background-color: black;
 }
 
 .replay {
     grid-area: replay;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
 }
 
+.replay button {
+    margin: 20px;
+    border-radius: 3px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.replay .pause {
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;
+
+}
 
 .doors {
     width: 100%;
@@ -258,4 +284,25 @@ header {
 .sortie_conteneur:hover {
     background-color: rgba(0,0,0,0.13);
 
+}
+
+
+/* Partie carte */
+
+.card, .card ul li, .card-body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.card {
+    padding: 20px;
+}
+
+.text_passage {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    padding: 25px;
+    font-size: 1.4em;
 }
