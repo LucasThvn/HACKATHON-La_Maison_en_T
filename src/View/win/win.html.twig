@@ -1,0 +1,22 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/style-win.css">
+{% endblock %}
+
+{% block content %}
+    <video autoplay loop id="bgvid">
+        <source src="/assets/movie/Homepage-fond.mp4" type="video/mp4">
+    </video>
+    <div class="box-title">
+        <h1 class="index-title-level-1">La Maison</h1>
+        <h2 class="index-title-level-2">En</h2>
+        <h3 class="index-title-level-3">T</h3>
+    </div>
+    <div class="box-txt-win">
+        <p class="txt-win">félicitations pour avoir réussi à survivre à cette aventure! N'hésitez pas à refaire une partie et tenter de trouver un chemin alternatif!</p>
+    </div>
+    <div class="box-link-home-win">
+        <a href="/" class="link-home-win">Retour à l'accueil</a>
+    </div>
+{% endblock %}

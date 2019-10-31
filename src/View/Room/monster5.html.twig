@@ -1,0 +1,13 @@
+{% block content %}
+    <div class="card card-display">
+        <div class="card-body">
+            <h5 class="card-title">{{ session.monster5.name }}</h5>
+            <p class="card-text" >{{ session.monster5.description }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Niveau : {{ session.monster5.level }}</li>
+            <li class="list-group-item">Attaque : {{ session.monster5.attack }}</li>
+            <li class="list-group-item">Defense : {{ session.monster5.defense }}</li>
+        </ul>
+    </div>
+{% endblock %}

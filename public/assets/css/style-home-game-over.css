@@ -79,3 +79,6 @@ video#bgvid {
 	font-family: 'Staatliches', cursive;
 	margin-bottom: 1em;
 }
+.link-replay-game-over:hover {
+	color: grey;
+}

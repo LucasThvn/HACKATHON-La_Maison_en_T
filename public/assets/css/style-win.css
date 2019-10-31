@@ -1,0 +1,53 @@
+.box-title {
+    margin-top: 2em;
+    text-align: center;
+}
+.index-title-level-1 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 4.5em;
+    padding: 0;
+}
+.index-title-level-2 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 3em;
+    padding: 0;
+}
+.index-title-level-3 {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 8em;
+    padding: 0;
+}
+video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: cover;
+}
+.box-txt-win {
+    margin-top: 3em;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.txt-win {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 2em;
+}
+.box-link-home-win {
+    text-align: center;
+}
+.link-home-win {
+    color: grey;
+    font-size: 3em;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 1em;
+}
+
+.link-home-win:hover {
+    color: grey;
+}
