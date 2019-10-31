@@ -5,20 +5,10 @@
 {% endblock %}
 
 {% block content %}
-
-        {% include 'header.html' %}
-
-        {% include 'text.html' %}
-
-
-    <section class="picture"><h2>picture</h2></section>
-    <section class="text"><h2>text</h2></section>
-    <section class="monster"><h2>monster</h2></section>
-    <section class="replay">
-        <button type="button" class="btn btn-dark btn-lg h-8">Rejouer</button>
-    </section>
+    {% include 'Room/title.html' %}
+    {% include 'Room/picture.html' %}
+    {% include 'Room/monster.html' %}
+    {% include 'Room/text.html' %}
+    {% include 'Room/replay.html' %}
+    {% include 'Room/mon_text.html' %}
 {% endblock %}
-
- {% block javascript %}
-     <
- {% endblock %}

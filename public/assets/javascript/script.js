@@ -1,7 +1,7 @@
 <!--script to the text-->
 <SCRIPT LANGUAGE=JavaScript>
 
-    var chaine = "ce kon veut icigdfgdfffddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
+    var chaine = "";
     var nb_car = chaine.length;
     var tableau = chaine.split("");
     texte = new Array;
@@ -22,6 +22,6 @@
     }
     if(document.getElementById)
 
-        setInterval("changeMessage()",100) /* la vitesse de defilement (plus on a une valeur faible plus
+        setInterval("changeMessage()",25) /* la vitesse de defilement (plus on a une valeur faible plus
 texte s'affiche rapidement) */
 </SCRIPT>
