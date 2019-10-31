@@ -20,31 +20,18 @@ class MonsterController extends AbstractController
             for ($i=0; $i<6; $i++) {
                 $chosenMonster[$i] = $result['monsters'][rand(0,19)];
             }
-            for ($i=0; $i<6; $i++) {
-                $chosenMonsterFinal[$i] = new Monster();
-                $chosenMonsterFinal[$i]->setName($chosenMonster[$i]['name']);
-                $chosenMonsterFinal[$i]->setLevel($chosenMonster[$i]['level']);
-                $chosenMonsterFinal[$i]->setAttack($chosenMonster[$i]['attack']);
-                $chosenMonsterFinal[$i]->setDefence($chosenMonster[$i]['defense']);
-                $chosenMonsterFinal[$i]->setDescription($chosenMonster[$i]['description']);
-                $chosenMonsterFinal[$i]->setImageUrl($chosenMonster[$i]['picture']);
-            }
-            return $chosenMonsterFinal;
+            return $chosenMonster;
         }
-
     }
-    public function listMonster(int $numberMonster)
-    {
-        $arrayMonster = $this->addMonster();
-        var_dump($arrayMonster[$numberMonster]);
-        return $this->twig->render('Room/monster.html.twig', ['monsters' => $arrayMonster]);
-    }
+    public function transformToSession(){
 
-    public function showMonster(int $numberMonster)
-    {
-        $arrayMonster = $this->addMonster();
-        var_dump($arrayMonster[$numberMonster]);
-        return $this->twig->render('Room/room.html.twig', ['showMonsters' => $arrayMonster]);
+        $arrayToMonster = $this->addMonster();
+        $_SESSION['monster0'] = $arrayToMonster[0];
+        $_SESSION['monster1'] = $arrayToMonster[1];
+        $_SESSION['monster2'] = $arrayToMonster[2];
+        $_SESSION['monster3'] = $arrayToMonster[3];
+        $_SESSION['monster4'] = $arrayToMonster[4];
+        $_SESSION['monster5'] = $arrayToMonster[5];
     }
 
 }
